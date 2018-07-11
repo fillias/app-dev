@@ -1,1 +1,3 @@
-document.write('hi webpacku fff');
+let x = "ere";
+
+document.write(x);

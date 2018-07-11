@@ -39,6 +39,10 @@ module.exports = {
 		port: 3000,
 		contentBase: path.resolve(__dirname, 'build')
 	},
+	watchOptions: {
+	    aggregateTimeout: 300,
+	    poll: 1000, // How often check for changes (in milliseconds)
+	},
 	module: {
 		rules: [
 			{

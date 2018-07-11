@@ -7,7 +7,7 @@ babel transpiluje do es5
 pouziti:
 
 	npm run start 
-	- spusti dev server na portu 300 co servri obsah adresare 'build'. Kouka to do adresare 'app' a bere js file odtamtad. S kazdym save reloadne server i aplikaci
+	- spusti dev server na portu 3000 co servri obsah adresare 'build'. Kouka to do adresare 'app' a bere js file odtamtad. S kazdym save reloadne server i aplikaci
 
 	npm run build
 	- zbuildi aplikaci, transpiluje do es5, minifikuje a ulozi jako bundle.js v adresari build
@@ -25,4 +25,5 @@ dev dependence:
 
     "webpack-cli": cli
 
-    "webpack-dev-server": devovy web server
+    "webpack-dev-server": devovy web server, --watch-poll kvuli tomu ze jinak nehlidal importovany js 
+    [https://stackoverflow.com/questions/42584315/webpack-dev-server-doesnt-watch-recompile-files-if-they-import-named-exports]
